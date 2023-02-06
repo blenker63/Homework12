@@ -14,4 +14,11 @@ public class Book {
     public String string() {
         return this.string;
     }
+
+    public String author() {
+        return this.author;
+    }
+    public int getYerPublication() {
+        return this.yerPublication;
+    }
 }

@@ -8,5 +8,13 @@ public class Author {
         this.name = name;
         this.surname = surname;
     }
+    public String Surname() {
+        return this.surname;
+    }
+    public String Name() {
+        return this.name;
+    }
+        String author = name + " " + surname;
+    }
 
-}
+
