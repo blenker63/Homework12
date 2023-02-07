@@ -8,13 +8,13 @@ public class Author {
         this.name = name;
         this.surname = surname;
     }
-    public String Surname() {
+    public String getSurname() {
         return this.surname;
     }
-    public String Name() {
+    public String getName() {
         return this.name;
     }
-        String author = name + " " + surname;
+        String author = getName() + " " + getSurname();
     }
 
 
