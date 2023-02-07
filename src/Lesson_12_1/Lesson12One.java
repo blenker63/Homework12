@@ -6,7 +6,6 @@ public class Lesson12One {
         System.out.println( "Книга 1");
 
         Author gogol = new Author( "Николай", "Гоголь");
-//        System.out.println(gogol);
         Book viy = new Book("Вий", gogol.getName() + " " + gogol.getSurname(), 1990);
         System.out.println("Название  - " + viy.getString());
         System.out.println("Автор - " + viy.getAuthor());
@@ -17,6 +16,8 @@ public class Lesson12One {
       Book chest = new Book("Честь имею", pikul.getName() + " " + pikul.getSurname(), 1985);
         System.out.println("Название  - " + chest.getString());
         System.out.println("Автор - " + chest.getAuthor());
+        System.out.println("Год публикации - " + chest.getYerPublication() + " год");
+        chest.setYerPublication(2010);
         System.out.println("Год публикации - " + chest.getYerPublication() + " год");
 }
 }

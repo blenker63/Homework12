@@ -23,4 +23,8 @@ public class Book {
     public int getYerPublication() {
         return this.yerPublication;
     }
+
+    public void setYerPublication(int yerPublication) {
+        this.yerPublication = yerPublication;
+    }
 }
