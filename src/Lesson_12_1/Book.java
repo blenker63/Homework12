@@ -4,8 +4,6 @@ public class Book {
     private String string;
     private String author;
     private int yerPublication;
-    //    Person sarah = new Person("Sarah", 30);
-//    Author Author = new Author(name,surname);
 
     public Book(String string, String author, int yerPublication) {
         this.string = string;
