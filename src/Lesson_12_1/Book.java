@@ -31,8 +31,6 @@ public class Book {
         this.yerPublication = yerPublication;
     }
 
-//    public void setAuthor(Author author) {
-//        this.author = author;
     }
 
 

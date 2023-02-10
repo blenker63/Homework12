@@ -18,12 +18,6 @@ public class Author {
         return this.name;
     }
 
-//    public void getAuthor() {
-//        this.author = getName() + " " + getSurname();
-//    }
-
-    //    public void setAuthor() {
-//    this.author = getName() + " " + getSurname();
     public String toString() {
         return this.name + " " + this.surname;
     }
