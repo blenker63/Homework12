@@ -1,19 +1,19 @@
 package Lesson_12_1;
 
 public class Book {
-    private String string;
+    private String title;
     private Author author;
 
     private int yerPublication;
 
-    public Book(String string, Author author, int yerPublication) {
-        this.string = string;
+    public Book(String title, Author author, int yerPublication) {
+        this.title = title;
         this.author = author;
         this.yerPublication = yerPublication;
     }
 
-    public String getString() {
-        return this.string;
+    public String getTitle() {
+        return this.title;
     }
 
     public Author getAuthor() {
