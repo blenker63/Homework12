@@ -19,10 +19,5 @@ public class Lesson12One {
         System.out.println("Год публикации - " + chest.getYerPublication() + " год");
         chest.setYerPublication(2010);
         System.out.println("Год публикации - " + chest.getYerPublication() + " год");
-
-        System.out.println("Сравнение авторов");
-        Author tolstoyLev = new Author("Лев", "Толстой");
-        Author tolstoylev = new Author("Лев", "Толстой");
-        System.out.println(tolstoyLev.equals(tolstoylev));
 }
 }

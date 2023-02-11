@@ -14,8 +14,21 @@ public class Author {
     public String getName() {
         return this.name;
     }
+    @Override
     public String toString() {
         return this.name + " " + this.surname;
+    }
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Author c2 = (Author) other;
+        return author.equals(c2.author);
+    }
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(author);
     }
 }
 
