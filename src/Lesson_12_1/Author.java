@@ -1,7 +1,8 @@
 package Lesson_12_1;
 
+import java.util.Objects;
+
 public class Author {
-    public String author;
     private String name;
     private String surname;
     public Author(String name, String surname) {
@@ -15,20 +16,21 @@ public class Author {
         return this.name;
     }
     @Override
-    public String toString() {
-        return this.name + " " + this.surname;
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Author author = (Author) o;
+        return Objects.equals(name, author.name) && Objects.equals(surname, author.surname);
     }
-    @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Author c2 = (Author) other;
-        return author.equals(c2.author);
-    }
+
     @Override
     public int hashCode() {
-        return java.util.Objects.hash(author);
+        return Objects.hash(name, surname);
+    }
+
+    @Override
+    public String toString() {
+        return this.name + " " + this.surname;
     }
 }
 

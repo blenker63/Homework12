@@ -1,4 +1,7 @@
 package Lesson_12_1;
+
+import java.util.Objects;
+
 public class Book {
     private String title;
     private Author author;
@@ -10,7 +13,6 @@ public class Book {
         this.author = author;
         this.yerPublication = yerPublication;
     }
-
     public String getTitle() {
         return this.title;
     }
@@ -26,25 +28,7 @@ public class Book {
     public void setYerPublication(int yerPublication) {
         this.yerPublication = yerPublication;
     }
-
-    @Override
-    public boolean equals(Object other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        Author c2 = (Author) other;
-        return author.equals(c2.author);
-    }
-
-    @Override
-    public int hashCode() {
-        return java.util.Objects.hash(title);
-    }
-
-    @Override
-    public String toString() {
-        return title + "  " + author;
-    }
 }
+
 
 
