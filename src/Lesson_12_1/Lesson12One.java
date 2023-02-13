@@ -28,7 +28,9 @@ public class Lesson12One {
         System.out.println("hashCode автор 1 - " + writer1.hashCode());
         System.out.println("hashCode автор 2 - " + writer2.hashCode());
         System.out.println("Сравнение книг - " + book1.equals(book2));
+        System.out.println(book1);
         System.out.println("hashCode книга 1 - " + book1.hashCode());
+        System.out.println(book2);
         System.out.println("hashCode книга 2 - " + book2.hashCode());
     }
 }

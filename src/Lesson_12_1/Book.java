@@ -28,17 +28,25 @@ public class Book {
     public void setYerPublication(int yerPublication) {
         this.yerPublication = yerPublication;
     }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return Objects.equals(title, book.title); // сравнение без учета года публикации
+        return Objects.equals(title, book.title) && Objects.equals(author, book.author); // сравнение без учета года публикации
     }
+
     @Override
     public int hashCode() {
-        return Objects.hash(title);
+        return Objects.hash(title, author);
+    }
+
+    @Override
+    public String toString() {
+        return "Книга: " +
+                "название - " + title  +
+                ", автор - " + author +
+                ", год публикации - " + yerPublication;
     }
 }
 
