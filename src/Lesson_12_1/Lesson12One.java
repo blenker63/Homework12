@@ -23,11 +23,12 @@ public class Lesson12One {
         Author writer1 = new Author("Лев", "Толстой");
         Author writer2 = new Author("Лев", "Толстой");
         Book  book1 = new Book("Война и мир", writer1, 1990);
-        Book book2 = new Book("Анна Каренина", writer2, 1990);
-        System.out.println(writer1.equals(writer2));
-        System.out.println(book1.getAuthor());
-        System.out.println(book2.getAuthor());
-        System.out.println(writer1.hashCode());
-        System.out.println(writer2.hashCode());
-}
+        Book book2 = new Book("Война и мир", writer2, 2010);
+        System.out.println("Сравнение авторов - " + writer1.equals(writer2));
+        System.out.println("hashCode автор 1 - " + writer1.hashCode());
+        System.out.println("hashCode автор 2 - " + writer2.hashCode());
+        System.out.println("Сравнение книг - " + book1.equals(book2));
+        System.out.println("hashCode книга 1 - " + book1.hashCode());
+        System.out.println("hashCode книга 2 - " + book2.hashCode());
+    }
 }
